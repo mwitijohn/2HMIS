@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .top {
+            display: flex;
+            background-color: white;
+            align-items: center;
+        }
+
+        .layout {
+            margin: 20px;
+            background-color: aquamarine;
+            padding: 0 20px;
+            border: 2px solid black;
+            border-radius: 45px;
+            justify-items: auto;
+            width: 40%;
+            height: 300px;
+            float: left;
+
+        }
+
+        .layout h2 {
+            text-align: center;
+            margin-top: 0%;
+        }
+
+        .lobby {
+            background-color: grey;
+            float: left;
+            width: 100%;
+        }
+
+        .lobby h2 {
+            color: aqua;
+            text-align: center;
+            font-size: xx-large;
+            width: 100%;
+        }
+
+        .btn {
+            float: right;
+            margin-right: 10px;
+            color: beige;
+        }
+
+        .see-all {
+            margin-top: 0;
+            margin-right: 10px;
+            float: right;
+        }
+
+        .lobby-nav ul li {
+            /* float: left; */
+            display: inline-block;
+            list-style: none;
+            margin: 20px;
+
+
+        }
+
+        .lobby-nav ul li a {
+            text-decoration: none;
+            font-size: x-large;
+
+        }
+
+        .lobby-nav ul li a:hover {
+            color: red;
+
+        }
+
+        .lobby-nav ul li a:active {
+            font-style: italic underlined;
+        }
+
+        .service-type {
+            margin: 5px;
+            background-color: aquamarine;
+            border: 2px solid rgb(216, 116, 116);
+            justify-items: auto;
+            height: 50px;
+
+        }
+
+        .service-type h3 {
+            text-decoration: none;
+            color: blue;
+            text-align: center;
+            padding: 15px;
+            display: block;
+        }
+
+        .r-p {
+            border: none;
+            padding: 2px;
+            margin: 20px;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 5px;
+        }
+
+        .r-p a {
+
+            text-decoration: none;
+            margin: 20px 0px 20px 0;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <p style="color:red">HMIS</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Outpatient</a>
+                <ul>
+                    <li><a href="outpatients.html"> outpatients registration</a></li>
+                    <li><a href="encounter.html"> encounter</a></li>
+                </ul>
+
+
+            </li>
+            <li><a href="#"> InPatients</a>
+                <ul>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="#">Current inpatients</a></li>
+                    <li><a href="#">Pending Discharge</a></li>
+                    <li><a href="#">Admision history</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Tests </a>
+                <ul>
+                    <li><a href="test-queues.html">Queue</a></li>
+                    <li><a href="#">Past queue</a></li>
+                    <li><a href="#">Completed investigations</a></li>
+                    <li><a href="#">Reports </a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pharmarcy</a>
+                <ul>
+                    <li><a href="#">Queue & Requsition </a></li>
+                    <li><a href="#">Issue reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Billing</a>
+                <ul>
+                    <li><a href="#">Select patients </a></li>
+                    <li><a href="#">Cash out</a></li>
+                    <li><a href="#">Reversal</a></li>
+                    <li><a href="#">Cancel unposted bills</a></li>
+                    <li><a href="#">Approvals</a></li>
+                    <li><a href="#">Consultants</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Theatre</a>
+                <ul>
+                    <li><a href="test-queues.html"> Queue</a></li>
+                    <li><a href="#">Current inpatients</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Morgue</a>
+                <ul>
+                    <li><a href="admit-to-morgue.html"> Admit to morgue</a></li>
+                    <li><a href="#">In morgue</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Reports</a>
+                <ul>
+                    <li><a href="#"> External reports</a></li>
+                    <li><a href="#"> Patients</a></li>
+                    <li><a href="#">Accounts and finance</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search">
+
+        <input type="search" placeholder="search here"> <input type="button" value="Search">
+
+    </div>
+    <div class="top">
+
+        <div class="layout">
+            <h2>Services</h2>
+            <div class="service-type">
+                <a href="#">
+                    <h3>Consultation</h3>
+                </a>
+            </div>
+            <div class="service-type">
+
+                <a href="#">
+                    <h3>Tests</h3>
+                </a>
+
+            </div>
+            <div class="service-type">
+                <a href="#">
+                    <h3>Theatre</h3>
+                </a>
+            </div>
+
+            <div class="service-type">
+                <a href="#">
+                    <h3>Morgue</h3>
+                </a>
+            </div>
+        </div>
+        <div class="layout">
+            <h2>Doctors available</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+                quibusdam ullam molestias illum, quae,
+                error nihil quaerat voluptate facere fuga tenetur voluptatum repellendus provident nisi perspiciatis
+                ab
+                incidunt at eum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quibusdam ullam molestias illum,
+                quae,
+                error nihil quaerat voluptate facere fuga tenetur voluptatum repellendus provident nisi perspiciatis
+                ab
+                incidunt at eum ?</p>
+        </div>
+        <div class="layout">
+            <h2>Registration</h2>
+            <h3>Regiser patients here:</h3>
+            <div class="r-p"><a href="outpatients.html">Register inpatients</a></div>
+            <div class="r-p"><a href="register.html">Admimisions</a><br></div>
+            <div class="r-p"> <a href="admit-to-morgue.html">Admit to morgue</a><br> </div>
+
+        </div>
+        <div class="layout">
+            <h2>Appointment</h2>
+            <p>check out up coming appointments</p>
+        </div>
+    </div>
+    </div>
+    <div class="lobby">
+        <hr>
+        <h2>Waiting-lobby</h2>
+        <p class="btn"><a href="outpatients.html"><input type="button" name="register" value="Register patient"></a></p>
+        <hr>
+        <div class="lobby-nav">
+            <ul>
+                <li> <a href="#">Waiting queue </a> </li>
+                <li> <a href="#">Emergency ward </a> </li>
+            </ul>
+
+        </div>
+        <div class="waiting-lobby">
+            <!-- should be a gridview -->
+            <h3>Patients in the wiating lobby </h3>
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>First Name</th>
+                    <th>second Name</th>
+                    <th>arrival time</th>
+                    <th>status </th>
+                    <th>attention</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>james</td>
+                    <td>bond</td>
+                    <td>7:11am</td>
+                    <td>appointment </td>
+                    <td>radiologist</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>john</td>
+                    <td>boll</td>
+                    <td>7:19am</td>
+                    <td>stable </td>
+                    <td>immediate attention</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>peter</td>
+                    <td>collins</td>
+                    <td>7:50pm</td>
+                    <td>immediate attention </td>
+                    <td>radiologist</td>
+
+                </tr>
+            </table>
+        </div>
+        <div class="see-all">
+            <a href="#"><button value="see all"> see all</button></a>
+        </div>
+
+
+    </div>
+    <div>
+        <p>we will be working on various items interms of coding the work required
+
+        </p>
+        <a href="#">this is a link </a>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+
+        }
+
+        .forms h1 {
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 75px;
+            line-height: 75px;
+            text-align: center;
+        }
+
+        .forms input {
+            margin-left: 40px;
+            background-color: aliceblue;
+            margin-right: 20px;
+        }
+
+        .forms legend {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: large;
+        }
+
+        .content {
+            float: left;
+            margin: 20px;
+            /* text-align: center; */
+            font-size: large;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <p style="color:red">HMIS</p>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">Outpatient</a>
+                <ul>
+                    <li><a href="outpatients.html"> Outpatients registration</a></li>
+                    <li><a href="encounter.html"> Encounter</a></li>
+                </ul>
+
+
+            </li>
+            <li><a href="#"> InPatients</a>
+                <ul>
+                    <li><a href="register.html">register</a></li>
+                    <li><a href="#">current inpatients</a></li>
+                    <li><a href="#">Pending Discharge</a></li>
+                    <li><a href="#">admision history</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Tests </a>
+                <ul>
+                    <li><a href="test-queues.html">Queue</a></li>
+                    <li><a href="#">Past queue</a></li>
+                    <li><a href="#">Completed investigations</a></li>
+                    <li><a href="#">Reports </a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pharmarcy</a>
+                <ul>
+                    <li><a href="#">Queue & Requsition </a></li>
+                    <li><a href="#">Issue Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Billing</a>
+                <ul>
+                    <li><a href="#">Select patients </a></li>
+                    <li><a href="#">Cash out</a></li>
+                    <li><a href="#">Reversal</a></li>
+                    <li><a href="#">Cancel Unposted bills</a></li>
+                    <li><a href="#">Approvals</a></li>
+                    <li><a href="#">Consultants</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Theatre</a>
+                <ul>
+                    <li><a href="#"> Queue</a></li>
+                    <li><a href="#">Current inpatients</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Morgue</a>
+                <ul>
+                    <li><a href="admit-to-morgue.html"> Admit to morgue</a></li>
+                    <li><a href="#">In morgue</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Reports</a>
+                <ul>
+                    <li><a href="#"> External reports</a></li>
+                    <li><a href="#"> Patients</a></li>
+                    <li><a href="#">Accounts and Finance</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search">
+
+        <input type="search" placeholder="search here"> <input type="button" value="Search">
+
+    </div>
+
+    <div class="forms">
+        <form action="home.php" method="POST" autocomplete="off">
+            <div>
+                <h1 style="text-align:center">Outpatients registration</h1>
+            </div>
+            <div class="content">
+                <fieldset>
+                    <legend>personal details:</legend>
+                    Enter firstname:
+                    <input type="text" name="firstname" placeholder="firstname" required>
+                    <br> <br>
+                    Enter middlename:
+                    <input type="text" name="second" placeholder="secondname" required>
+                    <br><br>
+                    Enter lastname:
+                    <input type="text" name="lstname" placeholder="lastname" required>
+                    <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>indentification</legend>
+                    Gender: <br>
+                    <input type="radio" name="gendero" value="male" checked> Male<br>
+                    <input type="radio" name="gendero" value="female"> Female<br>
+                    <input type="radio" name="gendero" value="other">other
+                    <br><br>
+                    date of birth:
+                    <input type="date" name="dob" placeholder="dateofbirth"><br><br>
+                    contacts: <br>
+                    <input type="email" name="email" placeholder="email" required>
+                    <br> <br>
+                    <input type="tel" name="tel" placeholder="telephone number" required>
+                    <br><br>
+                    <input type="number" name="IDNO" placeholder="identity card number">
+                </fieldset>
+                <div class="button">
+                    <a href=" #"><input class="cnacel" type="button" name="button" value="Cancel"></a>
+                    <input class="save" type="submit" formtarget="_blank" name="button" value="Save"> <br>
+                    <p style="margin-top: 15px;">Go to list of all<a href="#"> all outpatients</a></p>
+
+                </div>
+            </div>
+
+            <div class="waiting-lobby">
+                <!-- should be a gridview -->
+                <h3>patients in the wiating lobby </h3>
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>First Name</th>
+                        <th>second Name</th>
+                        <th>lasname Name</th>
+                        <th>arrival time</th>
+                        <th>status </th>
+                        <th>attention</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>james</td>
+                        <td>bond</td>
+                        <td>bills</td>
+                        <td>7:11am</td>
+                        <td>appointment </td>
+                        <td>radiologist</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>john</td>
+                        <td>boll</td>
+                        <td>Billow</td>
+                        <td>7:19am</td>
+                        <td>stable </td>
+                        <td>immediate attention</td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>peter</td>
+                        <td>collins</td>
+                        <td>kimathi</td>
+                        <td>7:50pm</td>
+                        <td>immediate attention </td>
+                        <td>radiologist</td>
+
+                    </tr>
+                </table>
+                <div class="encounter" style="float:right;">
+                    <!-- to register patient interactions with the doctors -->
+                    <p><a href="encounter.html" target="_blank"> <input type="button" name="encounter"
+                                value=" Register encounter"></a>
+                    </p>
+                </div>
+            </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

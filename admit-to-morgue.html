@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register to morgue</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+
+        }
+
+        .forms h1 {
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 75px;
+            line-height: 75px;
+            text-align: center;
+        }
+
+        .forms input {
+            margin-left: 40px;
+            background-color: aliceblue;
+        }
+
+        .content {
+            float: left;
+            margin: 20px;
+            /* text-align: center; */
+            font-size: large;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <p style="color:red">HMIS</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Outpatient</a>
+                <ul>
+                    <li><a href="outpatients.html"> outpatients registration</a></li>
+                    <li><a href="encounter.html"> encounter</a></li>
+                </ul>
+
+
+            </li>
+            <li><a href="#"> InPatients</a>
+                <ul>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="#">Current inpatients</a></li>
+                    <li><a href="#">Pending Discharge</a></li>
+                    <li><a href="#">Admision history</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Tests </a>
+                <ul>
+                    <li><a href="test-queues.html">Queue</a></li>
+                    <li><a href="#">Past queue</a></li>
+                    <li><a href="#">Completed investigations</a></li>
+                    <li><a href="#">Reports </a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pharmarcy</a>
+                <ul>
+                    <li><a href="#">Queue& requsition </a></li>
+                    <li><a href="#">Issue reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Billing</a>
+                <ul>
+                    <li><a href="#">Select patients </a></li>
+                    <li><a href="#">Cash out</a></li>
+                    <li><a href="#">Reversal</a></li>
+                    <li><a href="#">Cancel unposted bills</a></li>
+                    <li><a href="#">Approvals</a></li>
+                    <li><a href="#">Consultants</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Theatre</a>
+                <ul>
+                    <li><a href="#"> Queue</a></li>
+                    <li><a href="#">Current Inpatients</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Morgue</a>
+                <ul>
+                    <li><a href="admit-to-morgue.html"> Admit to morgue</a></li>
+                    <li><a href="#">In morgue</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Reports</a>
+                <ul>
+                    <li><a href="#"> External reports</a></li>
+                    <li><a href="#"> Patients</a></li>
+                    <li><a href="#"> Accounts and Finance</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search">
+
+        <input type="search" placeholder="search here"> <input type="button" value="Search">
+
+    </div>
+
+    <div class="forms">
+        <form action="#" method="POST" autocomplete="off">
+            <div>
+                <h1>morgue registration</h1>
+            </div>
+            <div class="content">
+                enter firstname:
+                <input type="text" name="firstname" placeholder="firstname" required>
+                <br><br>
+                enter middlename:
+                <input type="text" name="second" placeholder="middlename" required>
+                <br><br>
+                enter lastname:
+                <input type="text" name="lastname" placeholder="last name" required>
+                <br><br>
+                enter age:
+                <input type="number" name="age" placeholder="enter age" required>
+                <br><br>
+                Gender <br>
+                <input type="radio" name="genderp" value="male" checked> Male<br>
+                <input type="radio" name="genderp" value="female"> Female<br>
+                <input type="radio" name="genderp" value="other">other
+                <br><br>
+                time of death:
+                <input type="time" name="tod" required>
+                <br><br>
+                cause of death:
+                <input type="text" name="cod" placeholder="cause of death">
+            </div>
+            input report: <br><br>
+            <textarea name="report" rows="10" cols="50">
+                    Enter report here
+                    </textarea><br>
+            <fieldset>
+                <legend>next of kin </legend>
+                indentification: <br>
+                <input type="text" name="firstname" placeholder="firstname" required>
+                <br> <br>
+                <input type="text" name="second" placeholder="secondname" required>
+                <br><br>
+                <input type="text" name="lstname" placeholder="lastname" required>
+                <br><br>
+                <input type="tel" name="tel" placeholder="phonenumber" required>
+                <br><br>
+                <input type="text" name="rtnshp" placeholder="relationship"> <br><br>
+                Gender: <br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other">other
+                <br><br>
+
+            </fieldset> <br>
+            <div class="button">
+                <a href=" #"><input class="cnacel" type="button" name="button" value="Cancel"></a>
+                <input class="save" type="submit" formtarget="_blank" name="button" value="Save"> <br>
+                <p>Go to list of all<a href="#"> admitted to morgue</a></p>
+
+            </div>
+
+    </div>
+</body>
+
+</html>

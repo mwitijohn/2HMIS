@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: whitesmoke;
+
+        }
+
+        .forms h1 {
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 75px;
+            line-height: 75px;
+            text-align: center;
+        }
+
+        .forms input {
+            margin-left: 40px;
+            background-color: aliceblue;
+            margin-right: 20px;
+        }
+
+        .forms legend {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: large;
+        }
+
+        .content {
+            float: left;
+            margin: 20px;
+            /* text-align: center; */
+            font-size: large;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 20px;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <p style="color:red">HMIS</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Outpatient</a>
+                <ul>
+                    <li><a href="outpatients.html"> outpatients registration</a></li>
+                    <li><a href="encounter.html"> encounter</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#"> InPatients</a>
+                <ul>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="#">Current inpatients</a></li>
+                    <li><a href="#">Pending Discharge</a></li>
+                    <li><a href="#">Admision history</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Tests </a>
+                <ul>
+                    <li><a href="test-queues.html">Queue</a></li>
+                    <li><a href="#">Past queue</a></li>
+                    <li><a href="#">Completed investigations</a></li>
+                    <li><a href="#">Reports </a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pharmarcy</a>
+                <ul>
+                    <li><a href="#">Queue & requsition </a></li>
+                    <li><a href="#">Issue Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Billing</a>
+                <ul>
+                    <li><a href="#">Select Patients </a></li>
+                    <li><a href="#">Cash out</a></li>
+                    <li><a href="#">Reversal</a></li>
+                    <li><a href="#">Cancel unposted bills</a></li>
+                    <li><a href="#">Approvals</a></li>
+                    <li><a href="#">Consultants</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Theatre</a>
+                <ul>
+                    <li><a href="#"> Queue</a></li>
+                    <li><a href="#">Current inpatients</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Morgue</a>
+                <ul>
+                    <li><a href="admit-to-morgue.html"> Admit to morgue</a></li>
+                    <li><a href="#">In morgue</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Reports</a>
+                <ul>
+                    <li><a href="#"> External reports</a></li>
+                    <li><a href="#"> Patients</a></li>
+                    <li><a href="#">Accounts and Finance</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search">
+
+        <input type="search" placeholder="search here"> <input type="button" value="Search">
+
+    </div>
+    <div class="forms">
+        <form action="chris.php" method="POST" autocomplete="off">
+            <div>
+                <h1 style="text-align:center">inpatient registration</h1>
+            </div>
+            <div class="content">
+                <fieldset>
+                    <legend>Personal details:</legend>
+                    enter firstname:
+                    <input type="text" name="firstname" placeholder="firstname" required>
+                    <br> <br>
+                    enter middlename:
+                    <input type="text" name="second" placeholder="secondname" required>
+                    <br><br>
+                    enter lastname:
+                    <input type="text" name="lstname" placeholder="lastname" required>
+                    <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Indentification</legend>
+                    Gender <br>
+                    <input type="radio" name="gender-in" value="male" checked> Male<br>
+                    <input type="radio" name="gender-in" value="female"> Female<br>
+                    <input type="radio" name="gender-in" value="other">other
+                    <br><br>
+                    date of birth:
+                    <input type="date" name="dob" placeholder="dateofbirth"><br><br>
+                    contacts <br>
+                    <input type="email" name="email" placeholder="email" required>
+                    <br> <br>
+                    <input type="tel" name="tel" placeholder="telephone number" required>
+                    <br><br>
+                    <input type="number" name="IDNO" placeholder="identity card number">
+                </fieldset>
+            </div>
+
+            <fieldset>
+                <legend>next of kin </legend>
+                Enter firstname:
+                <input type="text" name="firstname" placeholder="firstname" required>
+                <br> <br>
+                Enter secondname:
+                <input type="text" name="second" placeholder="secondname" required>
+                <br><br>
+                Enter lastname:
+                <input type="text" name="lstname" placeholder="lastname" required>
+                <br><br>
+                Enter phonenumber:
+                <input type="tel" name="tel" placeholder="phonenumber" required>
+                <br><br>
+                State the relationship:
+                <input type="text" name="rtnshp" placeholder="relationship"> <br><br>
+                Gender: <br>
+                <input type="radio" name="gender-in1" value="male" checked> Male<br>
+                <input type="radio" name="gender-in1" value="female"> Female<br>
+                <input type="radio" name="gender-in1" value="other">other
+                <br><br>
+
+            </fieldset> <br>
+            <fieldset>
+                <legend>Room allocation</legend> <br>
+                Cause of admision:
+                <input type="text" name="coa" placeholder="enter cause of admision" required><br>
+                select wing to allocate: <br>
+
+                <input type="radio" name="wing" value="private" checked> private
+                <br><br>
+                <input type="radio" name="wing" value="public"> public
+                <br><br>
+                select type of ward:
+                <select name="wing" id="#">
+                    <option value="casualty"> casualty</option>
+                    <option value="general">General</option>
+                    <option value="icu"> icu</option>
+                </select>
+                <br>
+                room admitted to:
+                <input type="number" name="RN" placeholder="enter the room number">
+            </fieldset>
+            <div class="button">
+                <a href=" #"><input class="cnacel" type="button" name="button" value="Cancel"></a>
+                <input class="save" type="submit" formtarget="_blank" name="button" value="Save"> <br>
+                <p style="margin-top: 15px;">Go to list of all<a href="#"> all inpatiens</a></p>
+
+            </div>
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+	<style>
+		.testform {
+			float: left;
+			width: 100%;
+			border: 2px solid blue;
+		}
+
+		div {
+			padding-left: 20px;
+		}
+
+		.testform legend {
+			color: beige;
+			text-align: center;
+
+		}
+
+		button {
+			background-color: green;
+			margin-left: 45%;
+			width: 80px;
+			height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<p style="color:red">HMIS</p>
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="#">Outpatient</a>
+				<ul>
+					<li><a href="outpatients.html"> Outpatients registration</a></li>
+					<li><a href="encounter.html"> Encounter</a></li>
+				</ul>
+
+			</li>
+			<li><a href="#"> InPatients</a>
+				<ul>
+					<li><a href="register.html">register</a></li>
+					<li><a href="#">current inpatients</a></li>
+					<li><a href="#">Pending Discharge</a></li>
+					<li><a href="#">admision history</a> </li>
+				</ul>
+			</li>
+			<li><a href="#">Tests </a>
+				<ul>
+					<li><a href="test-queues.html">Queue</a></li>
+					<li><a href="#">Past queue</a></li>
+					<li><a href="#">Completed investigations</a></li>
+					<li><a href="#">Reports </a></li>
+				</ul>
+			</li>
+			<li><a href="#">Pharmarcy</a>
+				<ul>
+					<li><a href="#">Queue & Requsition </a></li>
+					<li><a href="#">Issue Reports</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Billing</a>
+				<ul>
+					<li><a href="#">Select patients </a></li>
+					<li><a href="#">Cash out</a></li>
+					<li><a href="#">Reversal</a></li>
+					<li><a href="#">Cancel Unposted bills</a></li>
+					<li><a href="#">Approvals</a></li>
+					<li><a href="#">Consultants</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Theatre</a>
+				<ul>
+					<li><a href="#"> Queue</a></li>
+					<li><a href="#">Current inpatients</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Morgue</a>
+				<ul>
+					<li><a href="admit-to-morgue.html"> Admit to morgue</a></li>
+					<li><a href="#">In morgue</a></li>
+					<li><a href="#">Reports</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Reports</a>
+				<ul>
+					<li><a href="#"> External reports</a></li>
+					<li><a href="#"> Patients</a></li>
+					<li><a href="#">Accounts and Finance</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="search">
+
+		<input type="search" placeholder="search here"> <input type="button" value="Search">
+
+	</div>
+
+	<div class="testform">
+		<p>where not aplicable type in N/A </p><br>
+		<form action="#" method="get">
+			<fieldset>
+				<legend style="background-color:black ;">Encounter Update</legend>
+				Patient name : <br>
+				<input type="text" name="patients name" placeholder="Enter patient name"> <br><br>
+				Attending doctor: <br>
+				<input type="text" name="patients name" placeholder="Enter patient name"> <br> <br>
+				Doctor's notes: <br>
+				<textarea name="recomendation" placeholder=" doctor's notes" id="#" cols="30"
+					rows="10"></textarea><br><br>
+				Doctor's prescription: <br>
+				<textarea name="prescription" placeholder=" doctor's prescription" id="#" cols="30"
+					rows="10"></textarea><br><br>
+		</form>
+		</fieldset>
+
+		<div class="labresults">
+			<!-- allow inputs of more than one test -->
+			<legend style="background-color:black ;">lab update</legend><br>
+
+			MLS:
+			<input type="text" placeholder="medical lab scientist"> <br><br>
+			Enter test type:
+			<input type="text" placeholder="types of tests carried out"> <br><br>
+			Time taken:
+			<input type="time"> <br><br>
+			Results: <br>
+			<textarea name="labresults" placeholder=" lab results" id="#" cols="30" rows="10"></textarea><br>
+
+		</div>
+		<button> save</button>
+	</div>
+
+</body>
+
+</html>
